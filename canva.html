@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title> Computacao Grafica </title>
+	</head>
+	<body>
+		<canvas id="x" width="300px" height="300px" style="border:1px solid blue">
+		</canvas>
+		<script type="text/javascript">
+		var a = 0;
+		var b = 255;
+		var c = 0;
+			for(var i=1;i<123;i++){
+				contexto = document.getElementById('x').getContext('2d');
+				contexto.fillStyle='rgba('+ b +',0,'+ c +',0.6)';
+				contexto.fillRect(a,a,180,180);
+				a = a + 1;
+				b = b - 1.7;
+				c = c + 2;
+			}
+		</script>
+	</body>
+</html>
